@@ -60,4 +60,8 @@ img {
 
 .header-wraper {
   display: flex;
+}
+
+.footer {
+  background-color: aqua;
 }/*# sourceMappingURL=index.css.map */
