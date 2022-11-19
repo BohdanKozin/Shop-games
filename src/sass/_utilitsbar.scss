@@ -1,3 +1,9 @@
+:root {
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #8D9289;
+    --accent-color: #86E543;
+}
+
 a,
 p,
 ul,
@@ -16,7 +22,7 @@ address {
 img {
     display: block;
     max-width: 100%;
-    height: auto
+    height: auto;
 }
 
 .container {
@@ -46,5 +52,4 @@ img {
         padding-left: 40px;
         padding-right: 40px;
     }
-
 }
