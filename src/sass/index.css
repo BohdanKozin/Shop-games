@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import '~node_modules/modern-normalize/modern-normalize.css';
 :root {
-  --primary-text-color: #ffffff;
-  --secondary-text-color: #8D9289;
-  --accent-color: #86E543;
+  --primary--color: #FFFFFF;
+  --accent--color: #86E543;
+  --header--color: #01383A;
+  --footer--color: #001414;
+  --secondary-color: #01383A;
+>>>>>>> main
 }
 
 a,
@@ -24,6 +28,11 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
 .container {
