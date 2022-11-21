@@ -55,6 +55,8 @@ ul {
 
 .blog-item {
     margin-bottom: 24px;
+    @media screen and (min-width: 1280px) {
+    }
 }
 .blog-title {
     font-weight: 500;
@@ -81,6 +83,7 @@ ul {
     @media screen and (min-width: 1280px) {
         font-size: 56px;
         line-height: 1; 
+        
     }
 }
 .blog-card {
