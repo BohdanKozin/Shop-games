@@ -1,0 +1,110 @@
+.title-hero {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: calc(38 / 32);
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    width: 247px;
+
+
+    @media screen and (min-width: 768px) {
+        font-size: 56px;
+        line-height: calc(66 / 56);
+        margin-bottom: 94px;
+        width: 388px;
+        text-align: left;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+        width: 515px;
+        text-align: left;
+
+    }
+}
+
+.hero {
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 127px;
+    
+    margin: 0 auto;
+
+    background-image: url(../images/hero/mouse-min.png), url(../images/hero/kb-min.png), url(../images/hero/hp-min.png), url(../images/hero/hero-bg-dt.jpg);
+    background-repeat: no-repeat;
+    background-position: left 16px top 57px, left 148px top 394px, left 139px top 5px, center bottom;
+    background-size: 60px 99px, 150px 186px, 88px 42px, cover;
+    // transform: rotate(-29deg, 24deg, 28deg, auto);
+
+    // @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //         .hero {
+    //             background-image: url('photo@2x.png');
+    //         }
+    //     }
+    @media screen and (min-width: 768px) {
+        padding-top: 180px;
+        padding-bottom: 345px;
+        align-items: center;
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 180px;
+        padding-bottom: 329px;
+
+        max-height: 860px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../images/hero/hero-bg-dt-2x.jpg);
+        }
+    }
+
+}
+
+.hero-btn {
+    border: none;
+    display: inline-block;
+    align-items: center;
+
+    padding: 16px 20px;
+    width: 173px;
+    height: 51px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+
+    text-align: right;
+    color: #01383A;
+    border-radius: 16px;
+    background: #86E543;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 306px;
+        height: 70px;
+        font-size: 32px;
+        line-height: calc(38 / 32);
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 306px;
+        height: 70px;
+        font-size: 32px;
+        line-height: calc(38 / 32);
+    }
+
+}
