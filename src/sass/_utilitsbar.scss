@@ -15,7 +15,7 @@ address {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -24,7 +24,7 @@ body {
   font-style: normal;
   color:var(--primary--color);
   font-weight: 400;
-  font-size: 16;
+  font-size: 16px;
   line-height: 1.18;
 }
 
@@ -47,10 +47,11 @@ body {
     padding-right: 40px;
   }
 
-  @media screen and (min-width: 1280px) {
-    margin: 0 auto;
-    width: 1280px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+
+    @media screen and (min-width: 1280px) {
+        margin: 0 auto;
+        width: 1280px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }

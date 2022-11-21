@@ -1,1 +1,123 @@
-.order{ background-color: yellow;}
+.take-order {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 48px;
+
+  background: url(../images/take-order/background/mobile/bg-mobile.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url(../images/take-order/background/mobile/bg-mobile-2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background: url(../images/take-order/background/tablet/bg-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url(../images/take-order/background/tablet/bg-tablet-2x.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    background: url(../images/take-order/background/desktop/bg-desktop.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url(../images/take-order/background/desktop/bg-desktop-2x.jpg);
+  }
+}
+
+.take-order__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  margin-bottom: 35px;
+  color: var(--primary--color);
+}
+
+.take-order__product {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: calc(38 / 32);
+  color: var(--primary--color);
+  margin-bottom: 24px;
+}
+
+.take-order__wrap {
+  margin-bottom: 16px;
+}
+
+.take-order__img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.take-order__first-price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration-line: line-through;
+  color: #8d9289;
+}
+
+.take-order__second-price {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  color: var(--accent--color);
+  text-align: end;
+
+  margin-bottom: 16px;
+}
+
+.take-order__list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.take-order__item {
+  flex-basis: calc((100% - 24px) / 4);
+}
+
+.take-order__img-catalog {
+  width: 100%;
+  border-radius: 4.52033px;
+}
+
+.take-order__contact {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  color: var(--accent--color);
+}
+
+.take-order__input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(25 / 16);
+
+  text-transform: capitalize;
+  color: #ffffff;
+
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #86e543;
+  outline: transparent;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(25 / 16);
+
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  margin-top: 16px;
+  margin-bottom: 40px;
+}

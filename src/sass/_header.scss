@@ -84,6 +84,8 @@
 }
 
 .mobile-menu-btn {
+  border-width: 0px;
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
@@ -122,6 +124,7 @@
 
 .mobile-menu-btn-cls {
   background-color: transparent;
+  border-width: 0px;
 
   &__icon {
     width: 36px;
