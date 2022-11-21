@@ -56,8 +56,6 @@ ul {
 
 .blog-item {
     margin-bottom: 24px;
-    @media screen and (min-width: 1280px) {
-    }
 }
 .blog-title {
     font-weight: 500;
@@ -84,6 +82,17 @@ ul {
     @media screen and (min-width: 1280px) {
         font-size: 56px;
         line-height: 1; 
+        display: none;
+    }
+}
+.blog-subtitle-hidden {
+    @media screen and (max-width: 1279px) {
+        display: none;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 52px;
     }
 }
 
@@ -98,13 +107,14 @@ ul {
     }
 }
 .by-date {
-    display: flex;
-    flex-direction: column;
     @media screen and (max-width: 767px) {
-        gap: 8px; 
-    }
-    @media screen and (min-width: 768px) {
+        gap: 8px;
         display: flex;
+        flex-direction: column; 
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        display: flex;
+        flex-direction: column;
         gap: 32px;
         justify-content: end;
     }
@@ -115,20 +125,55 @@ ul {
     font-weight: 600;
     line-height: 1;
 }
+.by-date-hidden {
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+}
 .blog-card-date {
     color: #8D9289;
 }
 .blog-text {
     margin-bottom: 8px;
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+.blog-text-hidden {
+    @media screen and (max-width: 1279px) {
+        display: none;
+    }
 }
 .blog-link {
-    font-weight: 600;
-    line-height: 1;
-    color: var(--accent--color);
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 48px;
+   
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+    @media screen and (max-width: 1279px) {
+        font-weight: 600;
+        line-height: 1;
+        color: var(--accent--color);
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 48px;
+    }
+}
+.blog-link-hidden {
+    @media screen and (max-width: 1279px) {
+        display: none;
+    }
+    @media screen and (min-width: 1280px) {
+        font-weight: 600;
+        line-height: 1;
+        color: var(--accent--color);
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 48px;
+    }
 }
 .blog-btn {
     display: flex;
