@@ -56,9 +56,6 @@ ul {
     }
 }
     .blog-image {
-        @media screen and (max-width: 767px) {
-        width: 100%;
-        }
         @media screen and (min-width: 768px) {
         width: 100%;
         border-radius: 12px;
@@ -218,18 +215,18 @@ ul {
 .vector {
     width: 100%;
     padding: 0;
-//   margin-top: 4px;
 }
-.blog-vector-line {
-    margin-top: -55px;
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-        margin-top: -20px;
-        margin-left: 4px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        margin-top: -94px;  
-    }
-    @media screen and (min-width: 1280px) {
-        margin-top: -100px; 
-    }
-}
+// .blog-vector-line {
+//     // margin-top: -55px;
+//     // background-size: cover;
+// }
+// .blog-vectors {
+    // display: inline-flex;
+    // flex-direction: column;
+    // gap: px;
+    // width: 100%;
+
+// .blog-vectors {
+//     background-image: url (../images/blog/Vector 24.png);
+//     background-size: cover;
+// }
