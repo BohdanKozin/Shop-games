@@ -15,8 +15,17 @@ address {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color:var(--primary--color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 .container {
@@ -37,11 +46,10 @@ img {
     padding-left: 40px;
     padding-right: 40px;
   }
-
-  @media screen and (min-width: 1200px) {
-    margin: 0 auto;
-    width: 1200px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+    @media screen and (min-width: 1280px) {
+        margin: 0 auto;
+        width: 1280px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }

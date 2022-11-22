@@ -1,13 +1,115 @@
-<section class="header">
-    <div class="container header-wraper" >
-        <a href="index.html" class="logo"> <span>SHOP FOR GAMERS</span></a>
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item"> <a href="accessories.html">Accessories</a></li>
-                <li class="menu__item"><a href="contact.html">Contact</a></li>
-                <li class="menu__item"><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-        <button class="menu__button">Shop now</button>
+<header class="header">
+  <div class="container header__container">
+    <a
+      href="./index.html"
+      title="Логотип компанії"
+      id="top-logo"
+      lang="en"
+      class="header__logo"
+      >SHOP FOR <br />
+      GAMERS</a
+    >
+    <nav class="navigation header__navigation">
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a
+            href="./accessories.html"
+            title="SHOP FOR GAMERS - аксесуари"
+            class="nav-list__link"
+            lang="en"
+            >Accessories</a
+          >
+        </li>
+        <li class="nav-list__item">
+          <a
+            href="./contact.html"
+            title="SHOP FOR GAMERS - контакти"
+            class="nav-list__link"
+            lang="en"
+            >Contact</a
+          >
+        </li>
+        <li class="nav-list__item">
+          <a
+            href="./blog.html"
+            title="SHOP FOR GAMERS - блог"
+            class="nav-list__link"
+            lang="en"
+            >Blog</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <button
+      type="button"
+      class="mobile-menu-btn menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="mobile-menu-btn__icon">
+        <use href="./images/header/symbol-defs.svg#icon-eva_menu-outline"></use>
+      </svg>
+    </button>
+
+    <button type="button" class="header-button">Shop now</button>
+  </div>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-wrapper">
+      <div class="header__container">
+        <a
+          href="./index.html"
+          title="Логотип компанії"
+          id="top-logo"
+          lang="en"
+          class="header__logo"
+          >SHOP FOR <br />
+          GAMERS</a
+        >
+
+        <button
+          class="mobile-menu-btn-cls menu-toggle js-close-menu"
+          type="button"
+        >
+          <svg class="menu-toggle mobile-menu-btn-cls__icon">
+            <use
+              href="./images/header/symbol-defs.svg#icon-akar-icons_cross"
+            ></use>
+          </svg>
+        </button>
+
+        <button type="button" class="header-button">Shop now</button>
+      </div>
+      <ul class="mob-menu-list">
+        <li class="mob-menu-list__item">
+          <a
+            href="./accessories.html"
+            title="SHOP FOR GAMERS - аксесуари"
+            class="mob-menu-list__link"
+            lang="en"
+            >Accessories</a
+          >
+        </li>
+        <li class="mob-menu-list__item">
+          <a
+            href="./contact.html"
+            title="SHOP FOR GAMERS - контакти"
+            class="mob-menu-list__link"
+            lang="en"
+            >Contact</a
+          >
+        </li>
+        <li class="mob-menu-list__item">
+          <a
+            href="./blog.html"
+            title="SHOP FOR GAMERS - блог"
+            class="mob-menu-list__link"
+            lang="en"
+            >Blog</a
+          >
+        </li>
+      </ul>
     </div>
-</section>
+  </div>
+</header>
