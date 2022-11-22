@@ -51,8 +51,12 @@
   }
 }
 .accessories__vector {
+  width: 100%;
+  padding-left: -15px;
+  padding-right: -15px;
 }
-
+.accessories__line {
+}
 .accessories__list {
   display: flex;
   justify-content: center;
