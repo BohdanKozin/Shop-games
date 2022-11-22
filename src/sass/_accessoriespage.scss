@@ -266,13 +266,31 @@
   height: 16px;
   border-radius: 50px;
   border: none;
+  box-shadow: 2px 5px #999;
+  &:hover {
+    background-color: var(--accent--color);
+  }
+  &:active {
+    background-color: var(--accent--color);
+    box-shadow: 0 5px rgb(102, 102, 102);
+    transform: translateY(4px);
+  }
 }
 .accessories__btn-item-hidden {
   width: 16px;
   height: 16px;
   border-radius: 50px;
   border: none;
+  box-shadow: 2px 5px #999;
   @media screen and (max-width: 768px) {
     display: none;
+  }
+  &:hover {
+    background-color: var(--accent--color);
+  }
+  &:active {
+    background-color: var(--accent--color);
+    box-shadow: 0 5px rgb(102, 102, 102);
+    transform: translateY(4px);
   }
 }
