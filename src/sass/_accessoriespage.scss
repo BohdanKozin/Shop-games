@@ -71,9 +71,8 @@
     padding: 120px 238px 72px 238px;
   }
 }
-/*
 .accessories__item {
-}*/
+}
 
 .accessories__button {
   padding: 8px 16px;
@@ -124,14 +123,14 @@
     column-gap: 38px;
     //padding: 24px 80px 168px 80px;
     padding-top: 24px;
-    padding-bottom: 168px;
+    padding-bottom: 32px;
   }
   @media screen and (min-width: 1200px) {
     row-gap: 24px;
     column-gap: 20px;
     //padding: 24px 40px 168px 40px;
     padding-top: 24px;
-    padding-bottom: 168px;
+    padding-bottom: 32px;
   }
 }
 .accessories__menu .accessories__foto {
@@ -141,6 +140,7 @@
 }
 .accessories__card {
 }
+
 .accessories__gallery {
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -222,4 +222,32 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+.accessories__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 120px;
+}
+.accessories__btn-item:first-child {
+  width: 40px;
+  height: 16px;
+  border-radius: 30px;
+  border: none;
+}
+.accessories__btn-item {
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  border: none;
+}
+.accessories__btn-item-hidden {
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  border: none;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
