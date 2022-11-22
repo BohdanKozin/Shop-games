@@ -35,12 +35,10 @@
 /*.container {
 }*/
 .accessories__title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.16;
-  color: #ffffff;
+  color: var(--primary--color);
   padding-left: 16px;
   @media screen and (max-width: 767px) {
     padding-left: 16px;
@@ -80,16 +78,11 @@
 
 .accessories__button {
   padding: 8px 16px;
-
-  border: 1px solid #86e543;
+  border: 1px solid var(--accent--color);
   border-radius: 16px;
   background-color: transparent;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.18;
-  color: #86e543;
+  color: var(--accent--color);
   /* Inside auto layout */
   flex: none;
   order: 1;
@@ -100,8 +93,8 @@
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: #01383a;
-    background: #86e543;
+    color: var(--header--color);
+    background: var(--accent--color);
     box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
   }
   @media screen and (max-width: 767px) {
@@ -170,7 +163,7 @@
 
 .accessories__foto {
   border-radius: 12px;
-  border: 1px solid #86e543;
+  border: 2px solid var(--accent--color);
   box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
 }
 
@@ -178,19 +171,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
-  color: #ffffff;
-  background: linear-gradient(0deg, #01383a, #01383a);
+  color: var(--primary--color);
+  background: linear-gradient(0deg, var(--header--color), var(--header--color));
   padding: 16px 16px 52px 16px;
   height: 100%;
   width: 100%;
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 12px;
+
   .accessories__gallery:hover &,
   .accessories__gallery:focus & {
     transform: translateY(0);
@@ -205,12 +196,10 @@
   align-items: baseline;
 }
 .accessories__name {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.18;
-  color: #86e543;
+  color: var(--accent--color);
   margin-bottom: 8px;
   /* Inside auto layout */
   flex: none;
@@ -237,6 +226,27 @@
   font-size: 20px;
   line-height: 100%;
   color: #86e543;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.accessories__price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  text-decoration-line: line-through;
+  color: var(--secondary-color);
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.accessories__new-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--accent--color);
   /* Inside auto layout */
   flex: none;
   order: 1;
