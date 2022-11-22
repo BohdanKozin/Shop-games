@@ -690,10 +690,97 @@ body {
 
 .contact {
   color: black;
+  background-color: var(--header--color);
 }
 
-.contact__wraper {
+.title {
+  padding-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--primary--color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.99px) {
+  .contact__imeges {
+    margin: 0px -15px 0px -15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.99px) {
+  .contact__img {
+    max-height: 346px;
+    min-width: 320px;
+  }
+}
+
+.contact__text {
+  margin-top: 16px;
+  color: var(--primary--color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.contact__text-1 {
+  margin-top: 24px;
+  color: var(--primary--color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.contact_mail-margin {
+  margin-top: 5px;
+  color: var(--primary--color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.contact__link {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.contact_form {
+  margin-top: 24px;
+}
+
+.contact_form-title {
+  color: var(--accent--color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_form-atritutes {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--primary--color);
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border: 0px;
+  border-bottom: 1px solid red;
   background-color: var(--header--color);
+  cursor: pointer;
+}
+
+.contact_form-atritutes:focus {
+  outline: 1px solid var(--focus-text-color);
+  outline-offset: 0;
 }
 
 body {
@@ -1447,4 +1534,38 @@ ul {
 
 .footer-btn__soc:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.container__wraper-2 {
+  background-color: var(--header--color);
+  margin: 0px -40px 0px -40px;
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+@media screen and (min-width: 320px) and (max-width: 767.99px) {
+  .container__wraper-2 {
+    margin: 0px -15px 0px -15px;
+    padding-bottom: 90px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__wraper-2 {
+    margin: 0px -40px 0px -40px;
+  }
+}
+
+.skrol {
+  align-items: center;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 104px;
+  height: 16px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.99px) {
+  .ban {
+    max-height: 498px;
+    min-width: 320px;
+  }
 }/*# sourceMappingURL=index.css.map */
