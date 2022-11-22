@@ -5,21 +5,32 @@ body {
 }
 
 .background {
+    background-repeat: no-repeat;
+    background-size: cover;
     @media screen and (max-width: 767px) {
         background-image: url(../images/blog/background-1x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url(../images/blog/background-2x.jpg);
+  }
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         background-image: url(../images/blog/background-tablet-1x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url(../images/blog/background-tablet-2x.jpg);
+  }
     @media screen and (min-width: 1280px) {
         background-image: url(../images/blog/background-desktop-1x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url(../images/blog/background-desktop-2x.jpg);
+  }
 }
 
 ul {
@@ -40,31 +51,52 @@ ul {
       padding-top: 120px; 
       padding-bottom: 120px; 
     }
+    @media screen and (min-width: 1280px) {
+        padding-top: 130px; 
+        padding-bottom: 120px; 
+    }
 }
     .blog-image {
-        @media screen and (max-width: 767px) {
-        width: 100%;
-
+        @media screen and (min-width: 320px) {
+            background-image: url(../images/blog/img1-mobile-1x.jpg); 
         }
         @media screen and (min-width: 768px) {
-        width: 100%;
-        border-radius: 12px;
+            background-image: url(../images/blog/img1-tablet-1x.jpg);
+            border-radius: 12px;
+            width: 387px;
+        }
+        @media screen and (min-width: 1280px) {
+            border-radius: 12px;
+            width: 387px;
+            height: 364px;
+            margin-right: 120px;
+            background-image: url(../images/blog/img1-desktop-1x.jpg),
+            url(../images/blog/img1-desktop-2x.jpg);
         }
     }
-
 .blog-item {
     margin-bottom: 24px;
 }
 .blog-title {
     font-weight: 500;
-    margin-bottom: 31px;
+    margin-bottom: -10px;
     @media screen and (max-width: 767px) {
         font-size: 24px;
         line-height: 1.16;
+        margin-top: 16px;
+        margin-left: 40px;
     }
     @media screen and (min-width: 768px) {
         font-size: 56px;
         line-height: 1.17;  
+        margin-left: 100px;
+        margin-bottom: -30px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-left: 140px;
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: -45px;
     }
 }
 .blog-subtitle {
@@ -96,12 +128,17 @@ ul {
 
 .blog-card {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 16px;
+    @media screen and (min-width: 320px) {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 16px;  
+    }
     @media screen and (min-width: 768px) {
         flex-direction: row;
         gap: 40px;
+    }    
+    @media screen and (min-width: 1280px) {
+        gap: 0;
     }
 }
 .by-date, 
@@ -118,7 +155,6 @@ ul {
         justify-content: end;
     }
 }
-
 
 .blog-card-author, 
 .blog-card-date {
@@ -147,7 +183,6 @@ ul {
     }
 }
 .blog-link {
-   
     @media screen and (min-width: 1280px) {
         display: none;
     }
@@ -194,13 +229,21 @@ ul {
     border: none;
 }
 
-.container.vector {
+.vector {
     width: 100%;
     padding: 0;
 }
-.blog-image {
-    @media screen and (max-width: 767px) {
-    width: 100%;
-    margin-left: auto;
-    }
-}
+// .blog-vector-line {
+//     // margin-top: -55px;
+//     // background-size: cover;
+// }
+// .blog-vectors {
+    // display: inline-flex;
+    // flex-direction: column;
+    // gap: px;
+    // width: 100%;
+
+// .blog-vectors {
+//     background-image: url (../images/blog/Vector 24.png);
+//     background-size: cover;
+// }
