@@ -2,6 +2,7 @@
   <div class="container">
     <h1 class="take-order__title">Take order</h1>
     <h2 class="take-order__product">Xiberia K9 PRO PC Headset</h2>
+    <div class="take-order__wrap-content">
     <div class="take-order__wrap">
       <picture>
         <source
@@ -47,6 +48,8 @@
       <p class="take-order__first-price">65.14 USD</p>
       <p class="take-order__second-price">55.14 USD</p>
     </div>
+    </div>
+
     <ul class="take-order__list">
       <li class="take-order__item">
         <picture>
@@ -214,8 +217,9 @@
       </li>
     </ul>
 
-    <form>
-      <label for="user-name" class="take-order__contact">CONTACT US</label>
+    <form class="take-order__form">
+      
+<label for="user-name" class="take-order__contact">CONTACT US</label>
       <input
         type="text"
         class="take-order__input"
@@ -229,6 +233,37 @@
         name="user-email"
         placeholder="Email"
       />
+      <div class="take-oredr__select-wrap">
+        <select name="user-select" class="take-oredr__select">
+          <option value="">Color Option</option>
+          <option value="">Color Option</option>
+          <option value="">Color Option</option>
+        </select>
+      </div>
+      <div class="take-oredr__select-wrap">
+        <select name="user-select" class="take-oredr__select">
+          <option value="">Quantity</option>
+        </select>
+      </div>
+      <div class="take-oredr__select-wrap">
+        <select name="user-select" class="take-oredr__select">
+          <option value="">Payment</option>
+        </select>
+      </div>
+      <label for="user-comment" class="take-order__lable"
+        >Leave your message</label
+      >
+      <textarea
+        name="user-comment"
+        id="user-comment"
+        class="take-order__textarea"
+      ></textarea>
+      <d class="take-order__button-wrap">
+        <button class="take-order__first-button">buy it now</button>
+        <button class="take-order__second-button">add to cart</button>
+      
+      </div>
+      
     </form>
   </div>
 </section>
