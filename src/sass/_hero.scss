@@ -23,38 +23,50 @@
 
     }
 }
+// .img-hero{
+// position: absolute;
+//     width: 133px;
+//     height: 220px;
+//     left: 10.5px;
+//     top: 74.37px;
 
+//     background: url(../images/hero/mouse-min.png);
+//     transform: rotate(-34deg);
+
+//     .img-hero:nth-child(2){
+//     position: absolute;
+//         width: 230px;
+//         height: 111px;
+//         left: 55.5px;
+//         top: 361.37px;
+    
+//         background: url(../images/hero/kb-min.png);
+//         transform: rotate(30deg);
+//     }
+// }
 .hero {
     width: 100%;
     padding-top: 180px;
     padding-bottom: 127px;
-    
     margin: 0 auto;
 
-    background-image: url(../images/hero/mouse-min.png), url(../images/hero/kb-min.png), url(../images/hero/hp-min.png), url(../images/hero/hero-bg-dt.jpg);
-    background-repeat: no-repeat;
-    background-position: left 16px top 57px, left 148px top 394px, left 139px top 5px, center bottom;
-    background-size: 60px 99px, 150px 186px, 88px 42px, cover;
-    // transform: rotate(-29deg, 24deg, 28deg, auto);
+    position: relative;
 
-    // @media (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //         .hero {
-    //             background-image: url('photo@2x.png');
-    //         }
-    //     }
+    background-image: url(../images/hero/hero-bg-dt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
     @media screen and (min-width: 768px) {
         padding-top: 180px;
         padding-bottom: 345px;
-        align-items: center;
+        padding-left: 40px;
 
     }
 
     @media screen and (min-width: 1280px) {
         padding-top: 180px;
         padding-bottom: 329px;
-
+        padding-left: 142px;
         max-height: 860px;
     }
 
@@ -69,10 +81,26 @@
 
 }
 
+.hero .acc{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+background-image: url(../images/hero/mouse-min.png),
+url(../images/hero/kb-min.png),
+url(../images/hero/hp-min.png);
+background-repeat: no-repeat;
+background-position: left 16px top 57px,
+left 148px top 394px,
+left 139px top 5px;
+background-size: 60px 99px, 150px 186px, 88px 42px;
+transform: rotate(-29deg),  rotate (24deg),  rotate (28deg);
+}
+
+
+
 .hero-btn {
     border: none;
     display: inline-block;
-    align-items: center;
 
     padding: 16px 20px;
     width: 173px;
