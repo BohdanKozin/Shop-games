@@ -1,0 +1,65 @@
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+        white-space: nowrap;
+}
+
+.container {
+    // width: 100%;
+    // padding: 120px 0 ;
+    // background-image: url(../images/gallery/BG.png);
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+
+.gallery {
+    background-image: url(../images/gallery/BG.png);
+    padding: 120px 0;
+}
+
+.slick-dots {
+    margin-top: 24px;
+}
+
+.slick-dots li button:before {
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+}
+
+.slick-dots li.slick-active button:before {
+    width: 40px;
+    height: 16px;
+    border-radius: 30px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
