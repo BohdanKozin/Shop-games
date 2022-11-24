@@ -1,0 +1,138 @@
+.title-hero {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: calc(38 / 32);
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    width: 247px;
+
+
+    @media screen and (min-width: 768px) {
+        font-size: 56px;
+        line-height: calc(66 / 56);
+        margin-bottom: 94px;
+        width: 388px;
+        text-align: left;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+        width: 515px;
+        text-align: left;
+
+    }
+}
+// .img-hero{
+// position: absolute;
+//     width: 133px;
+//     height: 220px;
+//     left: 10.5px;
+//     top: 74.37px;
+
+//     background: url(../images/hero/mouse-min.png);
+//     transform: rotate(-34deg);
+
+//     .img-hero:nth-child(2){
+//     position: absolute;
+//         width: 230px;
+//         height: 111px;
+//         left: 55.5px;
+//         top: 361.37px;
+    
+//         background: url(../images/hero/kb-min.png);
+//         transform: rotate(30deg);
+//     }
+// }
+.hero {
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 127px;
+    margin: 0 auto;
+
+    position: relative;
+
+    background-image: url(../images/hero/hero-bg-dt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 180px;
+        padding-bottom: 345px;
+        padding-left: 40px;
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 180px;
+        padding-bottom: 329px;
+        padding-left: 142px;
+        max-height: 860px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../images/hero/hero-bg-dt-2x.jpg);
+        }
+    }
+
+}
+
+.hero .acc{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+background-image: url(../images/hero/mouse-min.png),
+url(../images/hero/kb-min.png),
+url(../images/hero/hp-min.png);
+background-repeat: no-repeat;
+background-position: left 16px top 57px,
+left 148px top 394px,
+left 139px top 5px;
+background-size: 60px 99px, 150px 186px, 88px 42px;
+transform: rotate(-29deg),  rotate (24deg),  rotate (28deg);
+}
+
+
+
+.hero-btn {
+    border: none;
+    display: inline-block;
+
+    padding: 16px 20px;
+    width: 173px;
+    height: 51px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+
+    text-align: right;
+    color: #01383A;
+    border-radius: 16px;
+    background: #86E543;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 306px;
+        height: 70px;
+        font-size: 32px;
+        line-height: calc(38 / 32);
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 306px;
+        height: 70px;
+        font-size: 32px;
+        line-height: calc(38 / 32);
+    }
+
+}
