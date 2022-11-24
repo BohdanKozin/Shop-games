@@ -39,6 +39,35 @@ body {
   line-height: 1.18;
 }
 
+body {
+  background-image: url("/src/images/backgraund-body/background-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  body .hero__title {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url("/src/images/backgraund-body/background-mobile.jpg");
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1279.9px) {
+  body {
+    background-image: url("/src/images/backgraund-body/background-tablet.jpg");
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    background-image: url("/src/images/backgraund-body/backgraund-desctop.jpg");
+  }
+}
+
 .container {
   margin: 0 auto;
   padding-left: 15px;
