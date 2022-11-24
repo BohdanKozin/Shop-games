@@ -24,6 +24,7 @@
   @media screen and (min-width: 320px) and (max-width: 767.99px) {
     max-height: 346px;
     min-width: 320px;
+    border-radius: 12px;
   }
 }
 
@@ -135,7 +136,7 @@ cursor: pointer;}
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1279.9px){
 .contact__img{ min-width: 688px;
 height: 346px;
 border-radius: 12px;
@@ -153,7 +154,8 @@ margin-top: 32px;}
     .contact_form-title{font-weight: 700;
       font-size: 36px;
       line-height: 42px;}
-
+.contact__link{font-size: 24px;
+margin-top: 8px;}
 
 .contact__text-1{ margin-top: 0px;}
 .contact_form{ margin: 40px 89px 0px 89px;}
@@ -161,7 +163,35 @@ margin-top: 32px;}
 }
 
 
+@media screen and (min-width: 1280px) {
+  .contact__info{  display: flex;
+  flex-direction: column;}
+  .contact_mail-tel{flex-direction: column;}
+  .contact_mail-tel{margin-top: 40px;}
+.contact__text,.contact_mail-margin { width: 480px;
+font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;}
+  .contact__link{margin-top: 8px;}
+  
+    .contact__img{border-radius: 12px;
+    margin-bottom: 60px;}
+    .title{
+font-weight: 500;
+font-size: 56px;
+line-height: 66px;}
+.contact{ display: flex;
+}
+.contact_form{ margin-left: 122px;
+  min-width: 591px;
+}
+.contact_form-title{
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;}
+.contact__button{font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;}
 
 
-
-@media screen and (min-width: 768px) {}
+ }
