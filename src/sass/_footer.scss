@@ -11,17 +11,33 @@
 .footer-wrapper {
   height: 355px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    height: 135px;
+  }
 }
 .footer-nav {
   display: flex;
 }
 .footer-logo {
-  margin-bottom: 25px;
   width: 116px;
   text-align: center;
   height: 59px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 768px) {
+    order: -1;
+    margin-right: 61px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 187px;
+    margin-right: 118px;
+    margin-left: 7px;
+  }
 }
 .footer-logo__link {
   color: var(--primary--color);
@@ -29,9 +45,20 @@
   font-size: 24px;
   line-height: 1.17;
 }
+.site-nav {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    order: -1;
+    margin-right: 89px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 217px;
+  }
+}
 .site-nav__list {
   height: 112px;
-  margin-bottom: 24px;
 }
 .site-nav__item:not(:last-child) {
   margin-bottom: 16px;
@@ -40,7 +67,14 @@
   color: var(--primary--color);
   line-height: 100%;
 }
-
+.footer-contacts {
+  @media screen and (min-width: 768px) {
+    margin-right: 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 131px;
+  }
+}
 .footer-email {
   height: 46px;
   margin-bottom: 16px;
@@ -67,9 +101,23 @@
   margin-bottom: 8px;
 }
 .footer-btn {
-  margin-top: 81px;
-  margin-left: auto;
-  padding-right: 17px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: 81px;
+    margin-left: auto;
+    padding-right: 17px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    order: -1;
+    margin-right: 73px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: block;
+    margin-right: 89px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 281px;
+  }
 }
 .footer-btn__soc {
   display: block;
@@ -80,5 +128,13 @@
   cursor: pointer;
 }
 .footer-btn__soc:not(:last-child) {
-  margin-bottom: 32px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
 }
