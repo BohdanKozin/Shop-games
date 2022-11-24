@@ -850,7 +850,9 @@ body {
     max-width: 488px;
     margin-top: 0px;
   }
-  .contact_mail-margin, .contact__text, .contact__text-1 {
+  .contact_mail-margin,
+.contact__text,
+.contact__text-1 {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -882,7 +884,8 @@ body {
   .contact_mail-tel {
     margin-top: 40px;
   }
-  .contact__text, .contact_mail-margin {
+  .contact__text,
+.contact_mail-margin {
     width: 480px;
     font-weight: 400;
     font-size: 24px;
