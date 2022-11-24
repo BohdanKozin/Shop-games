@@ -3,6 +3,7 @@
   background-color: var(--header--color);
 }
 
+
 .contact__wraper {
 }
 .title {
@@ -183,6 +184,7 @@
 }
 
 @media screen and (min-width: 1280px) {
+ 
   .contact__info {
     display: flex;
     flex-direction: column;
@@ -208,7 +210,8 @@
     border-radius: 12px;
     margin-bottom: 60px;
   }
-  .title {
+  .title {margin-top: 120px;
+    margin-bottom: 70px;
     font-weight: 500;
     font-size: 56px;
     line-height: 66px;
