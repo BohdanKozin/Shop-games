@@ -44,17 +44,16 @@
     }
 }
     .blog-image { 
-        display: block;  
         @media screen and (min-width: 768px) {
             border-radius: 12px;
             width: 387px;
+            height: 228px;
         }
         @media screen and (min-width: 1280px) {
             border-radius: 12px;
             width: 387px;
             height: 364px;
             margin-right: 120px;
-            overflow: hidden;
         }
     }
 .blog-item {
@@ -88,7 +87,7 @@
     }
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         font-size: 56px;
-        line-height: 1.17;  
+        line-height: 1.17; 
     }
     @media screen and (min-width: 1280px) {
         font-size: 56px;
@@ -218,6 +217,9 @@
     margin-bottom: 20px;
     @media screen and (min-width: 768px) {
         margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 48px;
     }
  }
 .blog-line__first-up {
