@@ -3,8 +3,8 @@
   min-width: 320px;
 
   background-color: #01383a;
-  /* background-blend-mode: luminosity; */
 
+  background-blend-mode: normal, normal, luminosity;
   background-repeat: no-repeat;
   background-image: url(../images/hero/Fon-hero-min.png),
     url(../images/hero/frame-mob-min.png), url(../images/hero/hero-bg-dt.jpg);
