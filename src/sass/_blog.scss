@@ -1,8 +1,3 @@
-body {
-    margin: 0;
-    font-size: 16px;
-    color: #ffffff;
-}
 
 .background {
     background-repeat: no-repeat;
@@ -33,14 +28,6 @@ body {
   }
 }
 
-ul {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-
 .blog {
     box-shadow: -1px 19px 13px -7px rgba(134,229,67,0.75) inset;
     @media screen and (max-width: 767px) {
@@ -56,22 +43,17 @@ ul {
         padding-bottom: 120px; 
     }
 }
-    .blog-image {
-        @media screen and (min-width: 320px) {
-            background-image: url(../images/blog/img1-mobile-1x.jpg); 
-        }
+    .blog-image { 
         @media screen and (min-width: 768px) {
-            background-image: url(../images/blog/img1-tablet-1x.jpg);
             border-radius: 12px;
             width: 387px;
+            height: 228px;
         }
         @media screen and (min-width: 1280px) {
             border-radius: 12px;
             width: 387px;
             height: 364px;
             margin-right: 120px;
-            background-image: url(../images/blog/img1-desktop-1x.jpg),
-            url(../images/blog/img1-desktop-2x.jpg);
         }
     }
 .blog-item {
@@ -105,7 +87,7 @@ ul {
     }
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         font-size: 56px;
-        line-height: 1.17;  
+        line-height: 1.17; 
     }
     @media screen and (min-width: 1280px) {
         font-size: 56px;
@@ -179,6 +161,11 @@ ul {
     @media screen and (max-width: 1279px) {
         display: none;
     }
+    @media screen and (min-width: 1280px) {
+        gap: 16px;
+        display: flex;
+        flex-direction: column; 
+    }
 }
 .blog-link {
     @media screen and (min-width: 1280px) {
@@ -205,7 +192,6 @@ ul {
         text-decoration: none;
         display: flex;
         justify-content: flex-end;
-        margin-bottom: 48px;
     }
 }
 .blog-btn {
@@ -227,13 +213,16 @@ ul {
     border: none;
 }
 // Зеленые полоски
-.line {
+.blog-line {
     margin-bottom: 20px;
     @media screen and (min-width: 768px) {
         margin-bottom: 40px;
     }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 48px;
+    }
  }
-.line__first-up {
+.blog-line__first-up {
     border: 1px solid #7BE34A;
     box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
     position: absolute;
@@ -249,7 +238,7 @@ ul {
     }
  }
 
- .line__second-up {
+ .blog-line__second-up {
     border-left: 1px solid #7BE34A;
     box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
     position: absolute;
@@ -265,7 +254,7 @@ ul {
     }
  }
 
- .line__third-up {
+ .blog-line__third-up {
     border: 1px solid #7BE34A;
     box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
     position: absolute;
@@ -281,7 +270,7 @@ ul {
     }
  }
 
- .line__first-bottom {
+ .blog-line__first-bottom {
     border: 1px solid #28780D;
     box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
     position: absolute;
@@ -297,7 +286,7 @@ ul {
     }
  }
 
- .line__second-bottom {
+ .blog-line__second-bottom {
     border: 1px solid #28780D;
     box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
     position: absolute;
@@ -313,7 +302,7 @@ ul {
     }
  }
 
- .line__third-bottom {
+ .blog-line__third-bottom {
     border: 1px solid #28780D;
     box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
     position: absolute;
