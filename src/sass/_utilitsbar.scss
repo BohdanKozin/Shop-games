@@ -39,14 +39,6 @@ body{
 
 
 
-
-    @media screen and (max-width: 480px) {
-      .hero__title {
-        width: 100%;
-      }
-    }
-
-
     @media screen and (max-width: 767px) {
 
       background-image:url('/src/images/backgraund-body/background-mobile.jpg');
@@ -71,7 +63,7 @@ body{
 
   
     }}
-
+ 
   
 
 
@@ -81,7 +73,7 @@ body{
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 480px) and (max-width: 767.9px) {
+  @media screen and (min-width: 480px) {
     margin: 0 auto;
     width: 480px;
     padding-left: 15px;
