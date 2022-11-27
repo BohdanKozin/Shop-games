@@ -1,23 +1,4 @@
 
-// .background {
-//   @media screen and (max-width: 767px) {
-//     background-image: url(../images/blog-article/background-1x.jpg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//   }
-
-//   @media screen and (min-width: 768px) and (max-width: 1279px) {
-//     background-image: url(../images/blog-article/background-tablet-1x.jpg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     background-image: url(../images/blog-article/background-desktop-1x.jpg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//   }
-// }
 .blog-article {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -62,23 +43,31 @@ ol {
     display: flex;
     gap: 40px;
   }
-   
-    @media screen and (min-width: 1280px) {
-      
-    }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
   }
+}
   
   .blog-article__hidden-card {
     display: flex;
     flex-direction: column-reverse;
+    @media screen and (min-width: 1280px) {
+      width: 690px;
+    }
   }
 
   .blog-article__image {
+    background-size: contain;
     @media screen and (max-width: 767px) {
     margin-bottom: 20px;
     }
     @media screen and (min-width: 768px) {
       border-radius: 12px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 387px;
+      height: 336px;
     }
   }
 
@@ -97,7 +86,7 @@ ol {
     flex-direction: column;
     gap: 32px;
     justify-content: end;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 24px;
     line-height: 1;
     }
@@ -141,6 +130,10 @@ ol {
           font-size: 16px;
           line-height: 1.18;
         }
+        @media screen and (min-width: 1280px) {
+          font-size: 22px;
+          line-height: 1.16;
+        }
       }
 
       .blog-article__hide {
@@ -166,6 +159,10 @@ ol {
     line-height: 1.18;
     color:#ffffff;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 22px;
+    line-height: 1.16;
+  }
 }
 .blog-article__description {
   color: #86E543;
@@ -176,6 +173,10 @@ ol {
     color:#ffffff;
     font-size: 16px;
     line-height: 1.18;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 22px;
+    line-height: 1.16;
   }
 }
 
