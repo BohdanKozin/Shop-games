@@ -20,12 +20,7 @@
       url(../images/hero/hero-bg-dt-2x.jpg);
   }
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
   @media screen and (min-width: 768px) {
-    width: 768px;
-
     background-image: url(../images/hero/fon-hero-min.png),
       url(../images/hero/frame-tb-min.png), url(../images/hero/hero-bg-dt.jpg);
     background-position: bottom right -60px, bottom 75px right 0px,
@@ -42,8 +37,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
-
     background-image: url(../images/hero/fon-hero-min.png),
       url(../images/hero/frame-dt-min.png), url(../images/hero/hero-bg-dt.jpg);
     background-position: center, bottom 82px right 91px, center;
