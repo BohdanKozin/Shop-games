@@ -62,12 +62,9 @@ ol {
     display: flex;
     gap: 40px;
   }
-    @media screen and (min-width: 768px) {
-      width: 387px;
-      height: 228px;
-    }
+   
     @media screen and (min-width: 1280px) {
-      width: 387px;
+      
     }
   }
   
@@ -79,6 +76,9 @@ ol {
   .blog-article__image {
     @media screen and (max-width: 767px) {
     margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      border-radius: 12px;
     }
   }
 
@@ -157,31 +157,6 @@ ol {
       }
     }
 
-    .blog-article__list {
-      display: flex;
-      flex-direction: column;
-      color: #86e543;
-
-      @media screen and (max-width: 767px) {
-        font-size: 16px;
-        line-height: 1.18;
-        color: #ffffff;
-      }
-    }
-
-.blog-article__description {
-  color: #86e543;
-  font-weight: 400;
-  line-height: 1;
-  margin-bottom: 20px;
-
-  @media screen and (max-width: 767px) {
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.18;
-  }
-}
-
 .blog-article__list {
   display: flex;
   flex-direction: column;
@@ -205,12 +180,12 @@ ol {
 }
 
     // Зеленые полоски
-    .blog-article__line {
-      margin-bottom: 20px;
-      @media screen and (min-width: 768px) {
-        margin-bottom: 40px;
-      }
-    }
+    // .blog-article__line {
+    //   margin-bottom: 20px;
+    //   @media screen and (min-width: 768px) {
+    //     margin-bottom: 40px;
+    //   }
+    // }
 
     .blog-article__line--first-up {
       border: 1px solid #7be34a;
