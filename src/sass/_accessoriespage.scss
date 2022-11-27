@@ -40,21 +40,6 @@
 }
 
 .accessories__container {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
-
-  @media screen and (max-width: 1279px) {
-    display: none;
-  }
 }
 .accessories__title {
   font-weight: 600;
