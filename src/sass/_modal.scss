@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 20, 20, 0.8);
-  z-index: 5;
+  z-index: 105;
   overflow-y: scroll;
   transition: all 500ms linear;
   @media screen and (max-width:479px) {
@@ -23,7 +23,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 6;
+  z-index: 110;
   opacity: 0;
   visibility: hidden;
   width: 90vw;
@@ -126,31 +126,49 @@
   font-size: 24px;
   line-height: calc(28 / 24);
   color: var(--primary--color);
+  & span{
+    white-space: nowrap;
+  }
   
   @include tablet-only {
+    max-width: 608px;
     margin-bottom: 56px;
     font-size: 56px;
     line-height: calc(66 / 56);
+    & span{
+      white-space: normal;
+    }
   }
   @include desktop {
+    max-width: 608px;
     margin-bottom: 56px;
     font-size: 64px;
     line-height: calc(75 / 64);
+    & span {
+      white-space:normal;
+    }
   }
 }
 
 .modal-title-order {
+  margin: 0 auto;
+  max-width: 232px;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 24px;
   line-height: calc(28 / 24);
-  color: $secondaryTextColor;
+  color: var(--primary--color);
+  & span{
+    white-space: nowrap;
+  }
   @include tablet-only {
+    max-width: 576px;
     margin-bottom: 56px;
     font-size: 56px;
     line-height: calc(66 / 56);
   }
   @include desktop {
+    max-width: 608px;
     margin-bottom: 56px;
     font-size: 64px;
     line-height: calc(75 / 64);
@@ -158,29 +176,31 @@
 }
 
 .modal-title-ok {
+  margin: 0 auto;
+  max-width: 214px;
   margin-bottom: 32px;
   font-weight: 600;
   font-size: 24px;
   line-height: calc(28 / 24);
   color: var(--primary--color);
   animation:fade 400ms ease-in-out forwards;
+  & span {
+    white-space: nowrap;
+  }
   @include tablet-only {
+    max-width: 639px;
     margin-bottom: 56px;
     font-size: 56px;
     line-height: calc(66 / 56);
   }
   @include desktop {
+    max-width: 730px;
     margin-bottom: 56px;
     font-size: 64px;
     line-height: calc(75 / 64);
 
   }
 }
-
-
-
-
-
 
 
 
@@ -200,4 +220,29 @@
   text-transform: uppercase;
   min-width: 200px;
   margin: 15px;
+}
+
+
+
+
+
+
+
+
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
 }
