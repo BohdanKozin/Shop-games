@@ -3,31 +3,34 @@
     <h2 class="blog-article__title">
       Guide to Picking The Right Gaming Headset
     </h2>
-    <div class="line">
-      <div class="line__first-up"></div>
-      <div class="line__second-up"></div>
-      <div class="line__third-up"></div>
-      <div class="line__first-bottom"></div>
-      <div class="line__second-bottom"></div>
-      <div class="line__third-bottom"></div>
+    <div class="blog-article__line">
+      <div class="blog-article__line--first-up"></div>
+      <div class="blog-article__line--second-up"></div>
+      <div class="blog-article__line--third-up"></div>
+      <div class="blog-article__line--first-bottom"></div>
+      <div class="blog-article__line--second-bottom"></div>
+      <div class="blog-article__line--third-bottom"></div>
   </div>
         <div class="blog-article__picture">
           <picture>
             <source
-              scrset="../images/blog-article/Blog-article-desktop-1x.jpg 1x, ../images/blog-article/Blog-article-desktop-1x.jpg 2x"
-              media="(min-width: 1280px)">
-            </source>
+            media="(min-width: 1280px)"
+              scrset="./images/blog-article/blog-article-desktop-1x.jpg 1x, 
+              ./images/blog-article/blog-article-desktop-1x.jpg 2x"
+              type="image/jpg"
+              width="387"
+              height="364" />
             <source
-              scrset="../images/blog-article/Blog-article-tablet-1x.jpg 1x, ../images/blog-article/Blog-article-tablet-2x.jpg 2x"
-              media="(min-width: 768px)">
-            </source>
+              media="(min-width: 768px)"
+              scrset="./images/blog-article/blog-article-tablet-1x.jpg 1x, ./images/blog-article/blog-article-tablet-2x.jpg 2x"
+              type="image/jpg"/>
             <source
-              scrset="/src/images/blog-article/blog-article-mobile-2x.jpg 2x"
-              media="(max-width: 767px)">
-            </source> 
+              media="(max-width: 767px)"
+              scrset="./images/blog-article/blog-article-mobile-2x.jpg 2x"
+              type="image/jpg"/>
             <img
               class="blog-article__image"
-              src="/src/images/blog-article/blog-article-mobile-1x.jpg"
+              src="./images/blog-article/blog-article-mobile-1x.jpg"
               alt="hand and headphones" width="320"/>
           </picture>
           <div class="blog-article__hidden-card">
