@@ -53,6 +53,9 @@
 }
 
 .hero {
+  margin: 0 auto;
+  min-width: 320px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +65,13 @@
   padding-top: 180px;
   padding-bottom: 127px;
 
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
   @media screen and (min-width: 768px) {
+    width: 768px;
+
     align-items: flex-start;
 
     padding-top: 154px;
@@ -71,6 +80,8 @@
   }
 
   @media screen and (min-width: 1280px) {
+    width: 1280px;
+
     padding-top: 180px;
     padding-bottom: 208px;
     padding-left: 142px;

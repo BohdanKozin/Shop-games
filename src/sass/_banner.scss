@@ -1,33 +1,288 @@
-.container__wraper-2 {
-    background-color: var(--header--color);
-    margin: 0px -40px 0px -40px;
-    padding-top: 120px;
-    padding-bottom: 160px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    @media screen and (min-width: 320px) and (max-width: 767.99px) {
-        margin: 0px -15px 0px -15px;
-        padding-bottom: 90px;
-    }
-
-    @media screen and (min-width: 768px) {
-        margin: 0px -40px 0px -40px;
-
-    }
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
+.container {
+  min-width: 320px;
+  margin: 0 auto;
 
-.skrol {
-    align-items: center;
-    margin-top: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 104px;
-    height: 16px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 }
 
-.ban {
-    @media screen and (min-width: 320px) and (max-width: 767.99px) {
-        max-height: 498px;
-        min-width: 320px;
-    }
+.gallery-section {
+  @media screen and (min-width: 320px) {
+    padding: 0 0 48px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 120px 0;
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/gallery/bg-mob.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/gallery/bg-tab.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/gallery/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.gallery-container {
+  padding: 0;
+}
+
+.gallery-image {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.gallery-banner {
+  position: relative;
+}
+
+.gallery-thumb {
+  margin: 0;
+
+  @media screen and (min-width: 320px) {
+    position: absolute;
+    width: 257px;
+    bottom: 38px;
+    left: 24px;
+  }
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    width: 300px;
+    bottom: 38px;
+    left: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 519px;
+    bottom: 14px;
+    left: 41px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    width: 519px;
+    bottom: 49px;
+    left: 345px;
+  }
+}
+
+.gallery-thumb-second {
+  @media screen and (min-width: 320px) {
+    position: absolute;
+    width: 234px;
+    bottom: 38px;
+    left: 24px;
+  }
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    width: 300px;
+    bottom: 38px;
+    left: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 526px;
+    bottom: 14px;
+    left: 41px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    width: 519px;
+    bottom: 49px;
+    left: 49px;
+  }
+}
+
+.gallery-thumb-third {
+  @media screen and (min-width: 320px) {
+    position: absolute;
+    width: 234px;
+    bottom: 38px;
+    left: 24px;
+  }
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    width: 300px;
+    bottom: 38px;
+    left: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 551px;
+    bottom: 14px;
+    left: 41px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    width: 557px;
+    bottom: 49px;
+    left: 49px;
+  }
+}
+
+.gallery-title-first {
+  @media screen and (min-width: 320px) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    background: linear-gradient(
+      270deg,
+      #1edde0 13.26%,
+      #8bda41 51.01%,
+      #ef001b 107.89%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 30px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.2;
+    background: linear-gradient(
+      270deg,
+      #1edde0 13.26%,
+      #8bda41 51.01%,
+      #ef001b 107.89%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.gallery-title-second {
+  @media screen and (min-width: 320px) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    background: linear-gradient(
+      270deg,
+      #03fe8f 23.82%,
+      #ebdcff 57.84%,
+      #ff98f3 102.62%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 30px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.2;
+    background: linear-gradient(
+      270deg,
+      #03fe8f 23.82%,
+      #ebdcff 57.84%,
+      #ff98f3 102.62%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.gallery-title-third {
+  @media screen and (min-width: 320px) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    background: linear-gradient(
+      270deg,
+      #ffffff 13.26%,
+      #693cf9 60.87%,
+      #f475eb 107.89%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 30px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.2;
+    background: linear-gradient(
+      270deg,
+      #ffffff 13.26%,
+      #693cf9 60.87%,
+      #f475eb 107.89%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+// ------------------ Slick -----------------//
+
+.slick-dots li.slick-active button:before {
+  width: 40px;
+  height: 16px;
+  color: #ffffff;
+}
+
+.slick-dots li button:before {
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
 }

@@ -1,11 +1,115 @@
-<section class="container">
-    <div class="container__wraper-2">
+<section class="gallery-section">
+  <div class="container gallery-container">
+    <h2 class="visually-hidden">OUR ADVANTAGES</h2>
+    <div class="gallery-slider one-time">
+      <div class="gallery-banner">
         <picture>
-            <source media="(min-width: 1280px)" srcset="/src/images/contact/banner-dect.jpg">
-            <source media="(min-width: 768px)" srcset="/src/images/contact/banner-tablet.jpg">
-            <source media="(max-width: 767.9px)" srcset="/src/images/contact/mob-baner.jpg">
-            <img class="ban" src="/src/images/contact/banner-dect.jpg" alt="бан" />
+          <source
+            srcset="
+              ./images/gallery/banner1.jpg    1x,
+              ./images/gallery/banner1-2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/banner1-tab.jpg    1x,
+              ./images/gallery/banner1-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/banner1-mob.jpg    1x,
+              ./images/gallery/banner1-mob-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="gallery-image"
+            src="./images/gallery/banner1.jpg"
+            alt="keyboard and mouse"
+          />
         </picture>
-        <img class="skrol" src="/src/images/contact/Frame 15.png" alt="1">
+
+        <div class="gallery-thumb">
+          <h3 class="gallery-title-first">One place for everything you want</h3>
+        </div>
+      </div>
+
+      <div class="gallery-banner">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery/banner2.jpg    1x,
+              ./images/gallery/banner2-2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/banner2-tab.jpg    1x,
+              ./images/gallery/banner2-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/banner2-mob.jpg    1x,
+              ./images/gallery/banner2-mob-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="gallery-image"
+            src="./images/gallery/banner2.jpg"
+            alt="three gamers"
+          />
+        </picture>
+
+        <div class="gallery-thumb-second">
+          <h3 class="gallery-title-second">
+            Best shop for buying GAMING PRODUCTS
+          </h3>
+        </div>
+      </div>
+
+      <div class="gallery-banner">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery/banner3.jpg    1x,
+              ./images/gallery/banner3-2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/banner3-tab.jpg    1x,
+              ./images/gallery/banner3-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/banner3-mob.jpg    1x,
+              ./images/gallery/banner3-mob-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="gallery-image"
+            src="./images/gallery/banner3.jpg"
+            alt="joystick and mouse"
+          />
+        </picture>
+
+        <div class="gallery-thumb gallery-thumb-third">
+          <h3 class="gallery-title-third">
+            High-quality products in lowest price
+          </h3>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
