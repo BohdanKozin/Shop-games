@@ -1,4 +1,5 @@
 .footer {
+  width: 100%;
   background-color: var(--footer--color);
   padding-top: 25px;
   padding-bottom: 24px;
@@ -16,6 +17,7 @@
     flex-wrap: wrap;
   }
   @media screen and (min-width: 768px) {
+    justify-content: space-around;
     height: 135px;
   }
 }
